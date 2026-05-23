@@ -41,9 +41,20 @@ A web dashboard shows your connection status, run history, learning analytics, a
 - **Auth:** Google OAuth, X OAuth, Slack OIDC
 - **Infra:** Railway
 
+## Demo
+
+<!-- Add usage videos here -->
+<!-- Format: ![Description](assets/video-name.mp4) or link to hosted video -->
+
+| Video | Description |
+|-------|-------------|
+| _Coming soon_ | Onboarding interview in Slack |
+| _Coming soon_ | Discovery run and digest delivery |
+| _Coming soon_ | Dashboard and analytics walkthrough |
+
 ## Status
 
-Currently in private beta. [Get early access →](https://twitterbot.app)
+Currently in private beta. [Get early access →](https://discoveryagent-production.up.railway.app/)
 
 ## Roadmap
 
