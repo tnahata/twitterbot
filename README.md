@@ -32,7 +32,7 @@ You set up your profile once. It reads the firehose, surfaces only what's releva
 
 ## Status
 
-Currently in private beta. [Get early access →](https://discoveryagent-production.up.railway.app/)
+Currently in private beta.
 
 ## Demo
 
