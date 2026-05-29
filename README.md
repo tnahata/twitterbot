@@ -1,45 +1,38 @@
 # twitterbot
 
-An AI agent that discovers high-signal conversations on X matching your expertise and interests. It learns from every interaction, getting smarter over time — so you spend minutes approving, not hours searching.
+**An AI curator that finds the conversations worth your time on X — and learns what "worth it" means to *you*.**
 
-## What It Does
+Social feeds are built to keep you scrolling, not to keep you informed. The result is an attention tax: hours spent hunting for the handful of people, threads, and opportunities that actually matter to your work. twitterbot pays that tax for you.
 
-1. **Discovers** — AI-powered search finds conversations where your voice matters
-2. **Delivers** — curated digests arrive in your Slack DMs
-3. **Learns** — every Like, Dislike, and Skip sharpens future results
-4. **Compounds** — the more you use it, the better it gets
+You set up your profile once. It reads the firehose, surfaces only what's relevant to your skills, goals, and interests, and delivers a short curated digest. Every reaction you give sharpens the next one. It's **knowledge-optimized, not engagement-optimized** — the goal isn't more time on screen, it's less.
 
-## How It Works
+## What it does
 
-### Onboarding
-When you first connect, the bot interviews you in Slack — learning your skills, goals, and target domains through a natural conversation. No forms to fill out.
+1. **Discovers** — AI search finds conversations, builders, and opportunities where your voice actually fits
+2. **Delivers** — a curated digest lands where you already work, ready for a one-tap decision
+3. **Learns** — every like, pass, and edit teaches it your taste and your voice
+4. **Compounds** — run 50 is measurably better than run 1
 
-### Discovery
-The agent generates search queries tailored to your profile, fetches posts from X, scores them for relevance, and delivers a curated digest to your Slack DMs. Each post comes with Like, Dislike, and Skip buttons.
+## How it works
 
-### Learning Loop
-Every decision you make feeds back into the system. The agent learns what topics you care about, which voices you trust, and what kind of content resonates — then uses all of that to improve future runs. It tracks preferences across multiple dimensions simultaneously, so run 50 is measurably better than run 1.
+**Guided setup.** A quick web-based setup builds your profile — point it at a few links (your site, GitHub, writing), paste anything that represents you, and fill in your goals. It extracts the signal, you review, done. No endless forms.
 
-### Dashboard
-A web dashboard shows your connection status, run history, learning analytics, and budget usage.
+**Discovery.** It generates searches tailored to your profile, pulls posts from X, scores them for relevance, and sends you a curated digest with one-tap Like / Dislike / Skip.
 
-## Features
+**Learning loop.** Every decision feeds back in. It learns which topics you care about, which voices you trust, and what resonates — across multiple dimensions at once — then uses all of it to improve the next run.
 
-- **Smart Discovery** — semantic search and LLM ranking matched to your profile
-- **Adaptive Learning** — multi-dimensional preference learning with zero configuration
-- **Slack-Native** — one-tap decisions in your existing workspace
-- **Budget Controls** — per-user daily and monthly caps with full cost transparency
-- **Data Isolation** — your data is scoped to your account by design
-- **Analytics Dashboard** — track how your preferences evolve over time
+**Dashboard.** A simple web dashboard shows your connections, run history, learning analytics, and budget usage.
 
-## Tech Stack
+## What makes it different
 
-- **Backend:** Python, FastAPI, PostgreSQL
-- **AI:** Claude (ranking & evaluation), OpenAI (embeddings), LangGraph (pipeline orchestration)
-- **Bot:** Slack Bolt (Socket Mode)
-- **Frontend:** Tailwind CSS, Vite
-- **Auth:** Google OAuth, X OAuth, Slack OIDC
-- **Infra:** Railway
+- **A real learning loop.** Most tools personalize once and freeze. This one closes the loop — your explicit feedback continuously reshapes what you see.
+- **It sounds like you.** When it drafts a reply, it's trained on *your* voice, not a generic template — and you always approve before anything goes out.
+- **Quality over volume.** Aggressive filtering. A few great signals beat an endless feed.
+- **You stay in control.** Nothing is posted or sent without your say-so. Per-account budget caps keep costs transparent and bounded.
+
+## Status
+
+Currently in private beta. [Get early access →](https://discoveryagent-production.up.railway.app/)
 
 ## Demo
 
@@ -48,40 +41,38 @@ A web dashboard shows your connection status, run history, learning analytics, a
 
 | Video | Description |
 |-------|-------------|
-| _Coming soon_ | Onboarding interview in Slack |
+| _Coming soon_ | Guided profile setup |
 | _Coming soon_ | Discovery run and digest delivery |
 | _Coming soon_ | Dashboard and analytics walkthrough |
-
-## Status
-
-Currently in private beta. [Get early access →](https://discoveryagent-production.up.railway.app/)
 
 ## Roadmap
 
 - [x] Core discovery pipeline
 - [x] Multi-signal learning loop
-- [x] Slack bot with DM delivery
+- [x] Curated digest delivery with one-tap decisions
 - [x] Web dashboard with analytics
-- [x] Multi-user support with tenant isolation
+- [x] Multi-user accounts with full data isolation
 - [x] Budget controls and cost tracking
+- [x] Web-based guided onboarding
 - [ ] Scheduled automatic discovery runs
 - [ ] Reply drafting with voice matching
-- [ ] Multi-platform discovery (LinkedIn, Bluesky)
-- [ ] Public API
+- [ ] Smart auto-send for trusted categories
+- [ ] Multi-platform discovery (exploratory)
 
 ## Changelog
 
 ### v2.0 (current)
-- Multi-user architecture with full tenant isolation
+- Multi-user architecture with full per-account data isolation
+- Web-based guided onboarding (replaces the original Slack interview)
 - Web dashboard with analytics and connection management
-- Preference learning loop (categories, authors, semantic similarity, distillation)
+- Preference learning loop across categories, authors, and semantic similarity
 - Budget controls with per-user caps
 - Waitlist and admin approval flow
 
 ### v1.0
 - Single-user discovery pipeline
-- Slack bot with onboarding interview
 - LLM-powered search and ranking
+- Curated digest delivery
 - Basic preference tracking
 
 ## License
